@@ -27,13 +27,13 @@ export class MusicalKeyboard extends LitElement {
     // Generate random HSL colors for smooth gradients
     const hue1 = Math.random() * 360;
     const hue2 = (hue1 + 60) % 360; // Complementary color
-    
+
     this.gradientColor1 = `hsl(${hue1}, 70%, 20%)`;
     this.gradientColor2 = `hsl(${hue2}, 70%, 30%)`;
-    
+
     // Apply gradient to body
     document.body.style.background = `linear-gradient(135deg, ${this.gradientColor1}, ${this.gradientColor2})`;
-    document.body.style.transition = 'background 0.5s ease';
+    document.body.style.transition = "background 0.5s ease";
   }
 
   private setupAudio() {
@@ -44,7 +44,7 @@ export class MusicalKeyboard extends LitElement {
     window.addEventListener("keydown", this.handleKeyPress.bind(this));
   }
 
-  private handleKeyPress(event: KeyboardEvent) {
+  private handleKeyPress() {
     if (!this.audioContext) return;
 
     // Create oscillator
