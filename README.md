@@ -13,14 +13,14 @@ A beautiful web application that creates musical sounds and dynamic visual effec
 
 ## Live Demo 🌐
 
-[View the live demo](https://your-demo-url.com)
+[View the live demo](https://keypress-music.vercel.app/)
 
 ## Getting Started 🚀
 
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm or yarn
+- pnpm (recommended) or npm
 
 ### Installation
 
@@ -34,17 +34,17 @@ cd keypress-music
 2. Install dependencies:
 
 ```bash
+pnpm install
+# or if you prefer npm
 npm install
-# or
-yarn install
 ```
 
 3. Start the development server:
 
 ```bash
+pnpm dev
+# or if you prefer npm
 npm run dev
-# or
-yarn dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173`
@@ -52,9 +52,9 @@ yarn dev
 ### Building for Production
 
 ```bash
+pnpm build
+# or if you prefer npm
 npm run build
-# or
-yarn build
 ```
 
 The built files will be in the `dist` directory.
@@ -124,6 +124,7 @@ keypress-music/
 - [TypeScript](https://www.typescriptlang.org/) - For type safety
 - [Vite](https://vitejs.dev/) - For build tooling
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) - For sound synthesis
+- [pnpm](https://pnpm.io/) - For fast, disk space efficient package management
 
 ## License 📄
 
