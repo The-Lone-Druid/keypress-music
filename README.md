@@ -1,150 +1,123 @@
-# Keypress Music 🎵
+# KeyPress Music 🎹
 
-A beautiful web application that creates musical sounds and dynamic visual effects with keyboard interactions. Built with Lit, TypeScript, and Web Audio API.
+An interactive musical keyboard application that creates beautiful visualizations with Three.js and produces piano-like sounds using Tone.js. Play melodies with your keyboard or let the app play them automatically!
 
-## Features ✨
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.2.0-purple.svg)](https://vitejs.dev/)
 
-- 🎹 Generate musical sounds on keypress
-- 🎨 Dynamic gradient background that changes with each keystroke
-- 🌈 Smooth color transitions and animations
-- 🖥️ Glassmorphic UI design
-- 🎵 Random musical notes between A3 (220Hz) and A5 (880Hz)
-- 🎨 Responsive design that works on all screen sizes
+## Features
 
-## Live Demo 🌐
+- 🎵 Play piano-like sounds with your keyboard
+- 🎨 Beautiful 3D particle animations with Three.js
+- 🎹 Multiple octaves of notes available
+- 🔄 Auto-play mode with predefined melodies
+- 🎨 Smooth visual effects synchronized with sound
+- 🎯 Responsive design that works on all devices
 
-[View the live demo](https://keypress-music.vercel.app/)
+## Demo
 
-## Getting Started 🚀
+[Live Demo](https://your-demo-url.com) (Add your deployment URL here)
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (v16 or higher)
 - pnpm (recommended) or npm
 
 ### Installation
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/keypress-music.git
-cd keypress-music
-```
+   ```bash
+   git clone https://github.com/your-username/keypress-music.git
+   cd keypress-music
+   ```
 
 2. Install dependencies:
-
-```bash
-pnpm install
-# or if you prefer npm
-npm install
-```
+   ```bash
+   pnpm install
+   ```
 
 3. Start the development server:
-
-```bash
-pnpm dev
-# or if you prefer npm
-npm run dev
-```
+   ```bash
+   pnpm dev
+   ```
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-### Building for Production
+## Usage
 
-```bash
-pnpm build
-# or if you prefer npm
-npm run build
-```
+### Keyboard Controls
 
-The built files will be in the `dist` directory.
+- **A-K**: Higher octave notes (C4-C5)
+- **Z-M**: Lower octave notes (C3-C4)
+- **W, E, T, Y, U**: Sharp notes (C#4, D#4, F#4, G#4, A#4)
 
-## How It Works 🔧
+### Auto-Play Mode
 
-### Sound Generation
+1. Click the "Start Auto-Play" button to begin playing predefined melodies
+2. Use the "Next Melody" button to switch between different songs
+3. Click "Stop Auto-Play" to stop the automatic playback
 
-- Uses Web Audio API for sound synthesis
-- Generates random frequencies between 220Hz (A3) and 880Hz (A5)
-- Implements smooth attack and decay for natural sound
-- Supports multiple waveforms (sine, triangle)
+## Development
 
-### Visual Effects
-
-- Dynamic gradient background that changes on each keystroke
-- Smooth color transitions using HSL color space
-- Glassmorphic UI elements with backdrop filters
-- Responsive animations and hover effects
-
-## Contributing 🤝
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-### Development Guidelines
-
-- Follow the existing code style
-- Add comments for complex logic
-- Update documentation as needed
-- Test your changes thoroughly
-- Ensure all tests pass
-
-### Code Style
-
-- Use TypeScript for type safety
-- Follow Lit component patterns
-- Use meaningful variable and function names
-- Keep functions focused and small
-- Add proper error handling
-
-## Project Structure 📁
+### Project Structure
 
 ```
 keypress-music/
 ├── src/
-│   ├── assets/          # Static assets
-│   ├── musical-keyboard.ts  # Main component
-│   ├── index.css        # Global styles
-│   └── vite-env.d.ts    # TypeScript declarations
-├── public/              # Public assets
-├── index.html          # Main HTML file
-├── package.json        # Dependencies and scripts
-├── tsconfig.json       # TypeScript configuration
-└── vite.config.ts      # Vite configuration
+│   ├── musical-keyboard.ts    # Main application component
+│   ├── index.css              # Global styles
+│   └── assets/                # Static assets
+├── public/                    # Public assets
+├── package.json               # Project dependencies
+└── README.md                  # Project documentation
 ```
 
-## Technologies Used 🛠️
+### Available Scripts
 
-- [Lit](https://lit.dev/) - For web components
-- [TypeScript](https://www.typescriptlang.org/) - For type safety
-- [Vite](https://vitejs.dev/) - For build tooling
-- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) - For sound synthesis
-- [pnpm](https://pnpm.io/) - For fast, disk space efficient package management
+- `pnpm dev`: Start development server
+- `pnpm build`: Build for production
+- `pnpm preview`: Preview production build
 
-## License 📄
+### Technologies Used
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Three.js](https://threejs.org/)
+- [Tone.js](https://tonejs.github.io/)
+- [Lit](https://lit.dev/)
+
+## Contributing
+
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Roadmap
+
+- [ ] Add more predefined melodies
+- [ ] Implement volume control
+- [ ] Add visual keyboard representation
+- [ ] Support for custom melodies
+- [ ] Mobile touch support
+- [ ] Recording and playback functionality
+
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments 🙏
+## Acknowledgments
 
-- Thanks to the Lit team for the amazing web components library
-- Web Audio API documentation and examples
-- All contributors who help improve this project
+- [Three.js](https://threejs.org/) for the amazing 3D graphics library
+- [Tone.js](https://tonejs.github.io/) for the powerful audio framework
+- [Lit](https://lit.dev/) for the lightweight web components framework
 
-## Support 💖
+## Contact
 
-If you find this project helpful, please consider:
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
 
-- Starring the repository
-- Reporting bugs
-- Contributing code or documentation
-- Sharing with others
+Project Link: [https://github.com/your-username/keypress-music](https://github.com/your-username/keypress-music)
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Your Name](https://github.com/your-username)
